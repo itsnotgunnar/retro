@@ -1,89 +1,65 @@
 # retro - a node.js website for gunnar.ai
 
-'retro' is a node.js website designed for Gunnar.ai. It is a dynamic and responsive web application that provides a platform for users to interact with the Gunnar.ai domain. The website is built using modern web technologies and offers a range of features to enhance user experience.
+'retro' is a node.js website designed for gunnar.ai. it is a dynamic and responsive web application that provides a platform for users to interact with the gunnar.ai domain. the website is built using modern web technologies and offers a range of features to enhance user experience.
 
 ![image](website-example-mvp.png)
 
-## Table of Contents
+## table of contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
-- [Additional Sections](#additional-sections)
+- [installation](#installation)
+- [usage](#usage)
+- [features](#features)
+- [contributing](#contributing)
+- [license](#license)
+- [authors](#authors)
+- [acknowledgments](#acknowledgments)
+- [contact](#contact)
+- [additional sections](#additional-sections)
 
-## Installation
+## installation
 
-Before you begin the installation process, make sure you have Node.js and npm installed on your machine.
+before you begin the installation process, make sure you have node.js and npm installed on your machine.
 
-1. Clone the repository:
+1. clone the repository:
 git clone https://github.com/itsnotgunnar/retro.git
-2. Navigate to the project directory:
+2. navigate to the project directory:
 cd retro/winXP
-3. Install the required dependencies:
+3. install the required dependencies:
 npm install
-4. Start the server:
+4. start the server:
 npm start
-The application will start running on `http://localhost:3000`.
 
-## Usage
+the application will start running on `http://localhost:3000`.
 
-Once the application is running, open your web browser and navigate to `http://localhost:3000`. You will be greeted with the homepage of the website.
+## usage
 
-- To interact with the website, you can:
-  - Register a new account
-  - Login with your existing account
-  - Browse through the available features
+once the application is running, open your web browser and navigate to `http://localhost:3000`. you will be greeted with the homepage of the website.
 
-## Features
+- to interact with the website, you can:
+  - register a new account
+  - login with your existing account
+  - browse through the available features
 
-- User Authentication: Register and login to access personalized features.
-- Responsive Design: The website is fully responsive and works on all devices.
-- Dynamic Content: Content is dynamically loaded based on user interactions.
+## features
 
-## Contributing
+- user authentication: register and login to access personalized features.
+- responsive design: the website is fully responsive and works on all devices.
+- dynamic content: content is dynamically loaded based on user interactions.
 
-We welcome contributions from the community. If you would like to contribute to the project, please follow these guidelines:
+## contributing
 
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Submit a pull request with your changes.
+we welcome contributions from the community. if you would like to contribute to the project, please follow these guidelines:
 
-Please make sure to follow the coding conventions and standards used in the project.
+1. fork the repository.
+2. create a new branch for your changes.
+3. make your changes and commit them to your branch.
+4. submit a pull request with your changes.
 
-## Authors
+please make sure to follow the coding conventions and standards used in the project.
 
-- Gunnar [itsnotgunnar](https://github.com/itsnotgunnar)
-
-## Acknowledgments
-
-We would like to thank the following individuals and organizations for their support and contributions to the project:
-
-- [OpenAI](https://openai.com) for providing the language model used in this project.
-- [Node.js](https://nodejs.org) for providing the runtime environment for the application.
-
-## Contact
+## contact
 
 For any inquiries or support, please contact us at:
 
-- Email: support@gunnar.ai
-- Twitter: [@itsnotgunnar](https://twitter.com/itsnotgunnar)
-
-## Additional Sections
-
-### Troubleshooting
-
-If you encounter any issues while installing or using the application, please check the [FAQs](FAQs.md) section or submit a bug report on the [GitHub repository](https://github.com/itsnotgunnar/retro/issues).
-
-### FAQs
-
-Please refer to the [FAQs](FAQs.md) document for answers to common questions.
-
-### Roadmap
-
-For information on upcoming features and improvements, please refer to the [Roadmap](ROADMAP.md) document.
+- email: support@gunnar.ai
+- instagram: [@itsnotgunnar](https://linkedin.com/in/gunnarfranek)
