@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
-export default function Blog({ onClose, initialText }) {
+export default function Notepad({ onClose }) {
   const [docText, setDocText] = useState(
     "What's profound is that you make an amount of decisions to choose the same path every day, an amount that dwarfs any change, yet a single rash and adventurous decision to change your environment unlocks a path that holds entirely new experiences.",
   );

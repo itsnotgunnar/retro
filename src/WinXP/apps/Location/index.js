@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
-export default function Location({ onClose, initialText }) {
-  const [docText, setDocText] = useState('Houston, TX, USA');
+export default function Notepad({ onClose }) {
+  const [docText, setDocText] = useState(
+    'Houston, TX, USA --> Inbound: Washington (State)',
+  );
   const [wordWrap, setWordWrap] = useState(true);
 
   function onClickOptionItem(item) {
