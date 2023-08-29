@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "winXP",
+  "name": "retro",
   "builds": [
     {
       "src": "package.json",
@@ -29,5 +29,5 @@
       "dest": "/index.html"
     }
   ],
-  "alias": ["windowsxp.now.sh", "winxp.now.sh"]
+  "alias": ["gunnar.ai"]
 }

@@ -1,23 +1,15 @@
 {
-  "name": "winXP",
+  "name": "gunnar.ai",
   "version": "0.1.0",
   "private": true,
   "author": "gunnar",
-  "homepage": "https://winxp.now.sh",
+  "homepage": "https://gunnar.ai",
   "dependencies": {
-    "axios": "^1.4.0",
-    "devtool": "^2.3.1",
-    "lodash.samplesize": "^4.2.0",
-    "ncu": "^0.2.1",
-    "npm-check-updates": "^16.13.1",
-    "qs": "^6.11.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-ga": "^2.7.0",
     "react-scripts": "^5.0.1",
     "react-use": "^7.0.1",
-    "serve": "^14.2.1",
-    "spotify-web-api-node": "^5.0.2",
     "styled-components": "^4.2.0",
     "webamp": "^1.5.0"
   },
@@ -46,9 +38,7 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "prettier": "^1.18.2"
   },
   "engines": {
     "node": "18.17.1"

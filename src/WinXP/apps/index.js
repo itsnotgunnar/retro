@@ -8,6 +8,9 @@ import notepad from 'assets/windowsIcons/327(16x16).png';
 import notepadLarge from 'assets/windowsIcons/327(32x32).png';
 import winamp from 'assets/windowsIcons/690(16x16).png';
 import location from 'assets/windowsIcons/299(32x32).png';
+import MyComputer from './MyComputer';
+import files from 'assets/windowsIcons/318(32x32).png';
+import computer from 'assets/windowsIcons/676(32x32).png';
 
 const gen = () => {
   let id = -1;
@@ -81,6 +84,27 @@ export const defaultAppState = [
     id: genId(),
     zIndex: genIndex(),
   },
+  {
+    component: MyComputer,
+    header: {
+      title: 'My Computer',
+      icon: computer,
+      invisible: true,
+    },
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.25,
+      y: window.innerHeight * 0.25,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    id: genId(),
+    zIndex: genIndex(),
+  },
 ];
 
 export const defaultIconState = [
@@ -89,6 +113,13 @@ export const defaultIconState = [
     icon: winamp,
     title: 'Music',
     component: Winamp,
+    isFocus: false,
+  },
+  {
+    id: 1,
+    icon: computer,
+    title: 'My Computer',
+    component: MyComputer,
     isFocus: false,
   },
   {
@@ -187,6 +218,25 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
+  MyComputer: {
+    header: {
+      icon: computer,
+      title: 'My Computer',
+    },
+    component: MyComputer,
+    defaultSize: {
+      width: window.innerWidth / 3,
+      height: window.innerHeight / 3,
+    },
+    defaultOffset: {
+      x: window.innerWidth / 3,
+      y: window.innerHeight / 43,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
 };
 
-export { ErrorBox, Location, Blog, Winamp };
+export { ErrorBox, Location, Blog, Winamp, MyComputer };

@@ -5,9 +5,7 @@ import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState(
-    'Houston, TX, USA --> Inbound: Washington (State)',
-  );
+  const [docText, setDocText] = useState('Washington (State)');
   const [wordWrap, setWordWrap] = useState(true);
 
   function onClickOptionItem(item) {
