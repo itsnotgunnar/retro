@@ -11,6 +11,9 @@ import location from 'assets/windowsIcons/299(32x32).png';
 import MyComputer from './MyComputer';
 import files from 'assets/windowsIcons/318(32x32).png';
 import computer from 'assets/windowsIcons/676(32x32).png';
+import Resume from './Resume';
+import ie from 'assets/windowsIcons/ie.png';
+import resume from 'assets/windowsIcons/288(32x32).png';
 
 const gen = () => {
   let id = -1;
@@ -47,6 +50,7 @@ export const defaultAppState = [
     header: {
       title: 'Where Am I?',
       icon: location,
+      noFooterWindow: true,
     },
     defaultSize: {
       width: window.innerWidth * 0.5,
@@ -56,7 +60,7 @@ export const defaultAppState = [
       x: window.innerWidth * 0.25,
       y: window.innerHeight * 0.25,
     },
-    resizable: false,
+    resizable: true,
     minimized: true,
     maximized: false,
     id: genId(),
@@ -68,6 +72,7 @@ export const defaultAppState = [
       title: 'Winamp',
       icon: winamp,
       invisible: true,
+      noFooterWindow: true,
     },
     defaultSize: {
       width: 0,
@@ -88,7 +93,28 @@ export const defaultAppState = [
     header: {
       title: 'My Computer',
       icon: computer,
-      invisible: true,
+      noFooterWindow: true,
+    },
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.25,
+      y: window.innerHeight * 0.25,
+    },
+    resizable: false,
+    minimized: true,
+    maximized: false,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+  {
+    component: Resume,
+    header: {
+      title: 'Resume',
+      icon: resume,
+      noFooterWindow: true,
     },
     defaultSize: {
       width: 0,
@@ -135,6 +161,13 @@ export const defaultIconState = [
     component: Location,
     isFocus: false,
   },
+  {
+    id: 2,
+    icon: resume,
+    title: 'Resume',
+    component: Resume,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -163,6 +196,25 @@ export const appSettings = {
     header: {
       icon: notepad,
       title: 'Blog',
+    },
+    component: Blog,
+    defaultSize: {
+      width: window.innerWidth * 0.75,
+      height: window.innerHeight / 4,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.225,
+      y: window.innerHeight * 0.125,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
+  MyComputer: {
+    header: {
+      icon: computer,
+      title: 'My Computer',
     },
     component: Blog,
     defaultSize: {
@@ -232,10 +284,29 @@ export const appSettings = {
       y: window.innerHeight / 43,
     },
     resizable: true,
-    minimized: true,
+    minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
+  InternetExplorer: {
+    header: {
+      icon: resume,
+      title: 'Resume',
+    },
+    component: Resume,
+    defaultSize: {
+      width: window.innerWidth / 3,
+      height: window.innerHeight / 3,
+    },
+    defaultOffset: {
+      x: window.innerWidth / 3,
+      y: window.innerHeight / 43,
+    },
+    resizable: true,
+    minimized: false,
     maximized: false,
     multiInstance: true,
   },
 };
 
-export { ErrorBox, Location, Blog, Winamp, MyComputer };
+export { ErrorBox, Location, Blog, Winamp, MyComputer, Resume };

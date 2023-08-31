@@ -22,7 +22,7 @@ import stop from 'assets/windowsIcons/stop.png';
 import windows from 'assets/windowsIcons/windows.png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 
-function InternetExplorer({ onClose }) {
+function Resume({ onClose }) {
   const [state, setState] = useState({
     route: 'main',
     query: '',
@@ -137,7 +137,7 @@ function InternetExplorer({ onClose }) {
         <div className="ie__address_bar__content">
           <img src={ie} alt="ie" className="ie__address_bar__content__img" />
           <div className="ie__address_bar__content__text">
-            {`https://www.google.com.tw${
+            {`https://www.linkedin.com/in/gunnarfranek${
               state.route === 'search'
                 ? `/search?q=${encodeURIComponent(state.query)}`
                 : ''
@@ -468,4 +468,4 @@ const Div = styled.div`
   }
 `;
 
-export default InternetExplorer;
+export default Resume;
