@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Webamp from 'webamp';
 import { initialTracks } from './config';
 
+
 function Winamp({ onClose, onMinimize }) {
   const ref = useRef(null);
   const webamp = useRef(null);
