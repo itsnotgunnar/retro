@@ -240,8 +240,8 @@ export const initialTracks = [
       artist: 'Vintage Culture, James Hype',
       album,
     },
-  }
-  ,{
+  },
+  {
     url:
       'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/spotifydown.com%20-%20Brooklyn%20House%20Gangsta.mp3',
     duration: 125,
@@ -250,8 +250,8 @@ export const initialTracks = [
       artist: 'DANK',
       album,
     },
-  }
-  ,{
+  },
+  {
     url:
       'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/spotifydown.com%20-%20You%20Say.mp3',
     duration: 172,
