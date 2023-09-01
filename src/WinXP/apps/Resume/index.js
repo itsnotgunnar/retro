@@ -8,7 +8,7 @@ import printer from 'assets/windowsIcons/17(32x32).png';
 import go from 'assets/windowsIcons/290.png';
 import links from 'assets/windowsIcons/links.png';
 import search from 'assets/windowsIcons/299(32x32).png';
-import favorite from 'assets/windowsIcons/744(32x32).png';
+import favorite from 'assets/windowsIcons/star.png';
 import back from 'assets/windowsIcons/back.png';
 import earth from 'assets/windowsIcons/earth.png';
 import edit from 'assets/windowsIcons/edit.png';

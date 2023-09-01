@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import SubMenu from 'components/SubMenu';
-import ie from 'assets/windowsIcons/ie.png';
+import star from 'assets/windowsIcons/star.png';
 import mine from 'assets/minesweeper/mine-icon.png';
 import setAccess from 'assets/windowsIcons/227(32x32).png';
 import outlook from 'assets/windowsIcons/887(32x32).png';
@@ -11,7 +11,7 @@ import messenger from 'assets/windowsIcons/msn.png';
 import documents from 'assets/windowsIcons/308(32x32).png';
 import recentDocuments from 'assets/windowsIcons/301(32x32).png';
 import pictures from 'assets/windowsIcons/307(32x32).png';
-import music from 'assets/windowsIcons/550(32x32).png';
+import resume from 'assets/windowsIcons/resume32.png';
 import computer from 'assets/windowsIcons/676(32x32).png';
 import controlPanel from 'assets/windowsIcons/300(32x32).png';
 import connect from 'assets/windowsIcons/309(32x32).png';
@@ -21,12 +21,14 @@ import help from 'assets/windowsIcons/747(32x32).png';
 import search from 'assets/windowsIcons/299(32x32).png';
 import run from 'assets/windowsIcons/743(32x32).png';
 import lock from 'assets/windowsIcons/546(32x32).png';
-import user from 'assets/windowsIcons/user.png';
+import gunnar from 'assets/favicon-old.ico';
 import shut from 'assets/windowsIcons/310(32x32).png';
 import allProgramsIcon from 'assets/windowsIcons/all-programs.ico';
-import winamp from 'assets/windowsIcons/winamp.png';
+import music from 'assets/windowsIcons/music16.png';
 import notepad from 'assets/windowsIcons/327(32x32).png';
 import empty from 'assets/empty.png';
+import mystery from 'assets/windowsIcons/mystery.png';
+import mail from 'assets/windowsIcons/mail.png';
 
 import { AllPrograms, ConnectTo, MyRecentDocuments } from './FooterMenuData';
 
@@ -40,28 +42,28 @@ function FooterMenu({ className, onClick }) {
   return (
     <div className={className}>
       <header>
-        <img className="header__img" src={user} alt="avatar" />
-        <span className="header__text">User</span>
+        <img className="header__img" src={gunnar} alt="avatar" />
+        <span className="header__text">Gunnar</span>
       </header>
       <section className="menu" onMouseOver={onMouseOver}>
         <hr className="orange-hr" />
         <div className="menu__left">
-          <Item onClick={onClick} text="Internet" icon={ie}>
-            <div className="menu__item__subtext">Internet Explorer</div>
+          <Item onClick={onClick} text="About Me" icon={star}>
+            <div className="menu__item__subtext">Motivation / Contact Info</div>
           </Item>
-          <Item onClick={onClick} text="E-mail" icon={outlook}>
-            <div className="menu__item__subtext">Outlook Express</div>
+          <Item onClick={onClick} text="Blog" icon={mystery}>
+            <div className="menu__item__subtext">Worth a Look</div>
           </Item>
           <div className="menu__separator" />
           <Items
             onClick={onClick}
             items={[
-              { icon: mine, text: 'Minesweeper' },
-              { icon: notepad, text: 'Notepad' },
-              { icon: winamp, text: 'Winamp' },
-              { icon: paint, text: 'Paint' },
-              { icon: mediaPlayer, text: 'Windows Media Player' },
-              { icon: messenger, text: 'Windows Messenger' },
+              { icon: music, text: 'Playlist' },
+              { icon: resume, text: 'Resume' },
+              { icon: search, text: 'Where am I?' },
+              { icon: paint, text: 'Projects' },
+              { icon: mediaPlayer, text: 'Quotes' },
+              { icon: mail, text: 'Feedback' },
             ]}
           />
           <div style={{ flex: 1 }} />
@@ -128,7 +130,7 @@ function FooterMenu({ className, onClick }) {
             onClick={onClick}
             items={[
               { icon: pictures, text: 'My Pictures' },
-              { icon: music, text: 'My Music' },
+              { icon: resume, text: 'My Music' },
               { icon: computer, text: 'My Computer' },
             ]}
           />

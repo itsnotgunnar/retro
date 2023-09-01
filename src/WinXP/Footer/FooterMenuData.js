@@ -30,7 +30,7 @@ import connectionWizard from 'assets/windowsIcons/663(16x16).png';
 import networkSetup from 'assets/windowsIcons/664(16x16).png';
 import hyperCmd from 'assets/windowsIcons/669(16x16).png';
 import painter from 'assets/windowsIcons/680(16x16).png';
-import sound from 'assets/windowsIcons/690(16x16).png';
+import sound from 'assets/windowsIcons/music16.png';
 import recent from 'assets/windowsIcons/716(16x16).png';
 import compatibility from 'assets/windowsIcons/747(16x16).png';
 import magnifier from 'assets/windowsIcons/817(16x16).png';
@@ -374,12 +374,12 @@ export const AllPrograms = [
   {
     type: 'item',
     icon: ie,
-    text: 'Internet Explorer',
+    text: 'About Me',
   },
   {
     type: 'item',
     icon: outlook,
-    text: 'Outlook Express',
+    text: 'Resume',
   },
   {
     type: 'item',

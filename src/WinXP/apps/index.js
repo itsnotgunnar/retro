@@ -6,14 +6,14 @@ import Winamp from './Winamp';
 import error from 'assets/windowsIcons/897(16x16).png';
 import notepad from 'assets/windowsIcons/327(16x16).png';
 import notepadLarge from 'assets/windowsIcons/327(32x32).png';
-import winamp from 'assets/windowsIcons/690(16x16).png';
+import music from 'assets/windowsIcons/music16.png';
 import location from 'assets/windowsIcons/299(32x32).png';
 import MyComputer from './MyComputer';
 import files from 'assets/windowsIcons/318(32x32).png';
 import computer from 'assets/windowsIcons/676(32x32).png';
 import Resume from './Resume';
 import ie from 'assets/windowsIcons/ie.png';
-import resume from 'assets/windowsIcons/288(32x32).png';
+import resume from 'assets/windowsIcons/resume32.png';
 
 const gen = () => {
   let id = -1;
@@ -69,8 +69,8 @@ export const defaultAppState = [
   {
     component: Winamp,
     header: {
-      title: 'Winamp',
-      icon: winamp,
+      title: 'UNTDL2',
+      icon: music,
       noFooterWindow: true,
     },
     defaultSize: {
@@ -134,36 +134,29 @@ export const defaultAppState = [
 export const defaultIconState = [
   {
     id: 4,
-    icon: winamp,
-    title: 'Music',
+    icon: music,
+    title: 'UNTDL2',
     component: Winamp,
-    isFocus: false,
-  },
-  {
-    id: 1,
-    icon: computer,
-    title: 'My Computer',
-    component: MyComputer,
     isFocus: false,
   },
   {
     id: 3,
     icon: notepadLarge,
-    title: 'Blog',
+    title: 'BLG',
     component: Blog,
     isFocus: false,
   },
   {
     id: 5,
     icon: location,
-    title: 'Location',
+    title: 'LOCN',
     component: Location,
     isFocus: false,
   },
   {
     id: 2,
     icon: resume,
-    title: 'Resume',
+    title: 'RSME',
     component: Resume,
     isFocus: false,
   },
@@ -231,8 +224,8 @@ export const appSettings = {
   },
   Winamp: {
     header: {
-      icon: winamp,
-      title: 'Music',
+      icon: music,
+      title: 'UNTDL2',
       invisible: true,
     },
     component: Winamp,
