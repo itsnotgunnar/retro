@@ -53,6 +53,7 @@ export const defaultAppState = [
     header: {
       title: 'Quotes',
       icon: quotes,
+      noFooterWindow: true,
     },
     defaultSize: {
       width: window.innerWidth * 0.75,
@@ -92,9 +93,8 @@ export const defaultAppState = [
   {
     component: Winamp,
     header: {
-      title: 'My Playlist',
+      title: 'Playlist',
       icon: music,
-      noFooterWindow: true,
     },
     defaultSize: {
       width: 0,
@@ -158,35 +158,35 @@ export const defaultIconState = [
   {
     id: 4,
     icon: music,
-    title: 'UNTDL2',
+    title: 'Playlist',
     component: Winamp,
     isFocus: false,
   },
   {
     id: 3,
     icon: notepadLarge,
-    title: 'BLG',
+    title: 'Thoughts',
     component: Blog,
     isFocus: false,
   },
   {
     id: 5,
     icon: location,
-    title: 'LOCN',
+    title: 'Where am I?',
     component: Location,
     isFocus: false,
   },
   {
     id: 2,
     icon: resume,
-    title: 'RSME',
+    title: 'Resume',
     component: Resume,
     isFocus: false,
   },
   {
     id: 1,
     icon: quotes,
-    title: 'QTS',
+    title: 'Cool Quotes',
     component: Quotes,
     isFocus: false,
   },
@@ -250,7 +250,7 @@ export const appSettings = {
     resizable: true,
     minimized: true,
     maximized: false,
-    multiInstance: true,
+    multiInstance: false,
   },
   MyComputer: {
     header: {
@@ -306,7 +306,7 @@ export const appSettings = {
       y: window.innerHeight * 0.25,
     },
     resizable: true,
-    minimized: false,
+    minimized: true,
     maximized: false,
     multiInstance: true,
   },

@@ -6,53 +6,63 @@ import dropDownData from './dropDownData';
 
 // Create a variable that will hold a few pages of cool quotes that will be passed as the useState default value
 const quotes = [
-  `People feel they are the appropriate mix of what makes for a good person, and if not, they are unsastisfied 
+  `Life shrinks or expands in proportion to one’s courage.
 
-I’m telling a story, by saying black or white person you are prescribing the stereotypes of those races
+Desire is a contract you make with yourself to be unhappy until you get what you want.
 
-Purpose for everything is innovation. Maybe we can break the system
+To the man with a hammer, every problem is a nail.
+
+Self-esteem is the reputation that you have with yourself.
+
+When you eat shit, it’s better not to nibble.
+
+I’m not gaslighting you, you’re just crazy.
+
+Don’t do what will make you lie.
+
+Restraining orders don’t work on the people you put restraining orders on.
+
+Life is the dance between what we love and fear most. 
 
 Move fast and break things. 
 
-Life is a game. 
+What would you do if you know you couldn’t lose. 
 
-we’re not that different in the sense that we’re each the center of our world
+Dying tomorrow is not worse than dying on any other day.
 
-don’t cry over anything that can’t cry over you 
+We’re similar in the sense that each of us is the center of our universe.
 
-don’t be afraid to leave everything behind 
+Don’t cry over anything that can’t cry over you.
 
-the enemy of the best is the good
+Unease is the gap between between intent and action.
 
-its important to have a strong unique name for a strong identity as a kid
+Live what you want to tell.
 
-suffering is when you see reality as it is.. we push off reality bc we are biased to avoid pain
+Happiness is reality minus expectations.
 
-Live what you want to tell
-
-Happiness is reality minus expectations 
-
-Consumers are divinely discontent
+Consumers are divinely discontent. Their expectations are never static - they go up. It's human nature. We didn't ascend from our hunter-gatherer days by being satisfied. People have a voracious appetite for a better way, and yesterday's 'wow' quickly becomes today's 'ordinary'. - Jeff Bezos
 
 Have you ever done, thought or felt anything outside of the now ? Do you think you ever will ?
 
-There are no problems, only situations 
+Don’t be afraid to leave everything behind.
 
-Life is a single player game
+There are no problems, only situations.
 
-You invoke the universe when you say your name
+Life is a single player game.
+
+You invoke the universe when you say your name.
 
 We often say next time.. not knowing that the next time(s) are far more spread out than we imagine
 
-If there was an answer, we would not be free
+If there was an answer, we would not be free.
 
-If you can't program it, you don't understand it
+If you can't program it, you don't understand it.
 
-To the man with a hammer, every problem is a nail
+Suffering is when you see reality as it is.. we push off reality bc we are biased to avoid pain.
 
-The only true test of intelligence is that you get what you want out of life
+The only true test of intelligence is that you get what you want out of life.
 
-Process saves us from the poverty of our intentions
+Process saves us from the poverty of our intentions.
 
 While I was considering writing this (while watching a video), I told myself that I could wait until the next time my mind is free to write the very idea that was plaguing me down and examples thereof. THE NEXT TIMES ARE FEW AND FAR BETWEEN. that’s if they come, and if they do, you’re back to the same “dilemma”. Just fucking do it. 
 
@@ -64,52 +74,35 @@ Though life is short in the grand scheme of everything, from our eyes it is very
 
 You’re gonna die. 
 
-Life shrinks or expands in proportion to one’s courage. 
--------------------------------------------------
-Place yourself in this imaginary situation.
-
-Say that you were awarded the opportunity every night to dream up any dream your mind could alchemize for yourself. A lifetime of experience at your demand. Night after night, you would naturally fulfill all of your deepest desires, wake up, and say that was pretty great.
-
-Now let's change things up. You can still dream up anything you desire, but you can't control what goes on around you. This go-around, you're a bit more domicile; nonetheless estatic that you are able to pursue any journey you set your mind on. Soon enough, the aspect of risk in these dreams would make them even more exhilarating than your omnipotent ones. You would get more and more daring, night-after-night, until you dream into the situation that besets you today. 
-
-This dream is your life.
--------------------------------------------------
-
-Desire is a contract you make with yourself to be unhappy until you get what you want
-
-Self-esteem is the reputation that you have with yourself
-
 Memento mori— “remember that you have to die.” All of this will go to nothing. Remember before you were born? Just like that. 
 
-Forgiveness is accepting the apology you will never receive 
+Forgiveness is accepting the apology you will never receive.
 
-People aren't saying anything of weight if nobody would go up on stage and say the opposite ("kids are our future")
+People aren't saying anything of weight if nobody would go up on stage and say the opposite.
 
-Want the solution to the answer? That’s for you to figure out. It’s about the process: ensure the process is right to the extent that you’re sufficed
+Want the solution to the answer? That’s for you to figure out. It’s about the process: ensure the process is right to the extent that you’re sufficed.
 
-Even if you are not ready for the day, it can not always be night
+Even if you are not ready for the day, it can not always be night.
 
-When you eat shit, it’s better not to nibble
-
-Buddhist novelist George sanders - has an image of people’s “nectar in decaying containers”
+Buddhist novelist George sanders - has an image of people’s “nectar in decaying containers”.
 
 Every day you wake up; deliberately or not, you choose the situation you’re i
 
 Everybody should be under one time zone. Keep it simple. Should June be “December” in Brazil just because it is winter?
 
-To measure the quality of your life, simply do nothing, and see how it feels
+To measure the quality of your life, simply do nothing, and see how it feels.
 
 Hard choices, easy life. Easy choices, hard life. 
 
-Your mouth is filling up with spit.. don’t swallow 
+Your mouth is filling up with spit.. don’t swallow.
 
-Treat people for who they CAN be
+Treat people for who they CAN be.
 
-I apologize for the long letter, I didn't have time to make it shorter
+I apologize for the long letter, I didn't have time to make it shorter.
 
-The struggle ends when the gratitude begins
+The struggle ends when the gratitude begins.
 
-Your life is a series of endless choices
+Your life is a series of endless choices.
 
 Things are never as good or as bad as they seem
 
@@ -121,15 +114,15 @@ Don’t be afraid of being wrong. Because being wrong is just an opportunity to 
 
 What makes a river so restful to people is that is does not have any doubt. It is sure to get where it’s going, and it doesn’t want to go anywhere else 
 
-Life is fucking beautiful
+Life is fucking beautiful.
 
-Do not be subject to inertia 
+Do not be subject to inertia.
 
 Challenge your assumptions and the assumptions of those around you as a way of life 
 
 A man who had committed a mistake, and does not fix it, has created another mistake
 
-Any emotion is better than no emotion 
+Any emotion is better than no emotion.
 
 A character, after death, only sees flowers as blobs of color, and his spirit guide tells him, “That’s because you never really looked at them when you were alive.”
 
@@ -139,9 +132,9 @@ I feel like my back is up against the wall. I loads of pressure coming in, and e
 
 If I had an hour to figure out a problem, I’d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions
 
-Don’t lie, and you’ll never have to remember what you said 
+Don’t lie, and you’ll never have to remember what you said.
 
-We’re all devoted curators (of our lives)
+We’re all devoted curators [of our lives].
 
 Do something new every day. 
 
@@ -149,39 +142,41 @@ Not I hope they like me. I hope I like them.
 
 Any truths I maintain are my own property.
 
+People feel they are the appropriate mix of what makes for a good person, and if not, they are unsastisfied.
+
 The fool, with his other traits, has this also: he is always getting ready to live. 
 
 Morality is founded in our emotions. 
 
 How do you know that you were an amoeba? Evolution? You’re pressured into it. You’re crazy if you don’t, yet the people judging don’t know the details.  Who’s crazy?
 
-Your world is a reflection of your world within
+Your world is a reflection of your world within.
 
-Don’t do what will make you lie
+To be a phoenix, you have to burn.
 
-To be a phoenix, you have to burn 
-
-Restraining orders don’t work on the people you put restraining orders on
-
-I’m not gaslighting you, you’re just crazy
-
-You’re worried of a feeling
-
-Unease is the gap between between intent and action
+You’re worried of a feeling.
 
 Don’t think about the comfort of action, think of the discomfort of inaction 
 
 Imagine having to relive your day for the rest of your life.. would you have had a good life ?
 
-Dying tomorrow is not worse than dying on any other day
-
-If you don’t fear the unknown, the unknown will be kind to you
+If you don’t fear the unknown, the unknown will be kind to you.
 
 You decide who you are at every moment. An infintecimate amount of choices. 
 
-The answers are there for those who seek
+-------------------------------------------------
+Place yourself in this imaginary situation.
 
-Your network is your net worth 
+Say that you were awarded the opportunity every night to dream up any dream your mind could alchemize for yourself. A lifetime of experience at your demand. Night after night, you would naturally fulfill all of your deepest desires, wake up, and say that was pretty great.
+
+Now let's change things up. You can still dream up anything you desire, but you can't control what goes on around you. This go-around, you're a bit more domicile; nonetheless estatic that you are able to pursue any journey you set your mind on. Soon enough, the aspect of risk in these dreams would make them even more exhilarating than your omnipotent ones. You would get more and more daring, night-after-night, until you dream into the situation that besets you today. 
+
+This dream is your life.
+-------------------------------------------------
+
+The answers are there for those who seek.
+
+"Your network is your net worth." - Mason Mastrov
 
 Think about any situation you’ve been in. Now think about it without any fears or desires. Think about how simple it is.
 
@@ -217,7 +212,7 @@ Isolation Paradox- the more time you develop yourself-intellectually, emotionall
 
 A trial is a giving of yourself. Huge effect on your consciousness is to be concerned. 
 
-If a girl leans in the kiss you after felacio, do you concede?
+If a girl leans in to kiss you after felacio, do you concede?
 
 Happiness is how one feels when things are going well.
 
@@ -257,7 +252,7 @@ There’s no difference between a pessimist who says, ‘Oh, it’s hopeless, so
 
 Story of the Chinese farmer. Maybe. 
 
- Contemplate the life of a social entrepreneur. (Look  into Peter Singer.)
+Contemplate the life of a social entrepreneur. (Look into Peter Singer.)
 
 Everything you do, you did be cause you thought it was your best option, for any reason. - Plato
 
@@ -275,8 +270,6 @@ Those entrenched in expectations will eventually rationalize [un]fulfillment.
 
 questions to stimulate the idea that consciousness can be solely claimed by humans: how do you think humans obtained consciousness? how would this look being applied to others? how does this make you feel? is the bias warranted? who do I want to be? what do I believe I can be?
 
-Life is the dance between what we love and fear most. 
-
 The harder I work, the luckier I get. 
 
 Sugar and salt look the same. 
@@ -285,11 +278,11 @@ Problems are questions that have not been answered. Premise in the form of an an
 
 You can't solve a problem with the mind that created it.
 
-Do what you love and let it kill you. -  Bukowski
+"Do what you love and let it kill you." -  Bukowski
 
 What can happen if everything goes right?
 
-To be brave, there needs to be fear. 
+To be brave, there needs to be fear.
 
 You reap what you sow. "Fairly blunt, hopefully clear." 
 
@@ -346,8 +339,6 @@ It’s not how about well you’re doing, but how long you’re doing well.
 Does your decision shrink or expand your options?
 
 Cowards die many times before their deaths; the valiant never taste of death but once.
-
-What would you do if you know you couldn’t lose. 
 
 Avoiding judging through understanding.
 
