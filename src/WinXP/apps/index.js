@@ -16,6 +16,7 @@ import Resume from './Resume';
 import ie from 'assets/windowsIcons/ie.png';
 import resume from 'assets/windowsIcons/resume32.png';
 import quotes from 'assets/windowsIcons/quotes32.png';
+import mystery from 'assets/windowsIcons/mystery.png';
 
 const gen = () => {
   let id = -1;
@@ -62,7 +63,7 @@ export const defaultAppState = [
       y: window.innerHeight * 0.125,
     },
     resizable: true,
-    minimized: false,
+    minimized: true,
     maximized: false,
     id: genId(),
     zIndex: genIndex(),

@@ -8,8 +8,6 @@ import dropDownData from './dropDownData';
 const quotes = [
   `People feel they are the appropriate mix of what makes for a good person, and if not, they are unsastisfied 
 
-I feel like my back is up against the wall. I loads of pressure coming in, and either my back or the wall is set to break. I want to load up some more pressure and see what happens
-
 I’m telling a story, by saying black or white person you are prescribing the stereotypes of those races
 
 Purpose for everything is innovation. Maybe we can break the system
@@ -136,6 +134,8 @@ Any emotion is better than no emotion
 A character, after death, only sees flowers as blobs of color, and his spirit guide tells him, “That’s because you never really looked at them when you were alive.”
 
 Addiction is the progressive narrowing of the things that bring you pleasure
+
+I feel like my back is up against the wall. I loads of pressure coming in, and either my back or the wall is set to break. I want to load up some more pressure and see what happens
 
 If I had an hour to figure out a problem, I’d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions
 
@@ -356,6 +356,8 @@ What's profound is that you make an amount of decisions to choose the same path 
 Losing the right game can be better than winning the game in front of you. 
 
 You are whoever you pretend to be. 
+
+What's profound is that you make an amount of decisions to choose the same path every day, an amount that dwarfs any change, yet a single rash and adventurous decision to change your environment unlocks a path that holds entirely new experiences.
 `,
 ];
 
