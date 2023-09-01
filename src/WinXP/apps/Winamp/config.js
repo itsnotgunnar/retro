@@ -143,10 +143,10 @@ export const initialTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Me%20Dad\'s%20A%20Truckie%20-%20Original%20Mix.mp3',
+      "https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Me%20Dad's%20A%20Truckie%20-%20Original%20Mix.mp3",
     duration: 278,
     metaData: {
-      title: 'Me Dad\'s A Truckie - Original Mix',
+      title: "Me Dad's A Truckie - Original Mix",
       artist: 'Cut Snake',
       album,
     },
@@ -173,10 +173,10 @@ export const initialTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Shinin\'.mp3',
+      "https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Shinin'.mp3",
     duration: 171,
     metaData: {
-      title: 'Shinin\'',
+      title: "Shinin'",
       artist: 'Ethan Healy',
       album,
     },
@@ -240,7 +240,8 @@ export const initialTracks = [
       artist: 'Vintage Culture, James Hype',
       album,
     },
-  },{
+  }
+  ,{
     url:
       'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/spotifydown.com%20-%20Brooklyn%20House%20Gangsta.mp3',
     duration: 125,
@@ -249,7 +250,8 @@ export const initialTracks = [
       artist: 'DANK',
       album,
     },
-  },{
+  }
+  ,{
     url:
       'https://raw.githubusercontent.com/itsnotgunnar/retro/master/src/assets/music/spotifydown.com%20-%20You%20Say.mp3',
     duration: 172,
@@ -258,5 +260,5 @@ export const initialTracks = [
       artist: 'Maur, Roobinz',
       album,
     },
-  }
+  },
 ];
