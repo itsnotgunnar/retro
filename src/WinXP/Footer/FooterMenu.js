@@ -21,7 +21,7 @@ import help from 'assets/windowsIcons/747(32x32).png';
 import search from 'assets/windowsIcons/299(32x32).png';
 import run from 'assets/windowsIcons/743(32x32).png';
 import lock from 'assets/windowsIcons/546(32x32).png';
-import gunnar from 'assets/favicon-old.ico';
+import gunnar from 'assets/favicon.ico';
 import shut from 'assets/windowsIcons/310(32x32).png';
 import allProgramsIcon from 'assets/windowsIcons/all-programs.ico';
 import music from 'assets/windowsIcons/music16.png';
