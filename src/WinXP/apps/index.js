@@ -71,7 +71,6 @@ export const defaultAppState = [
     header: {
       title: 'Winamp',
       icon: winamp,
-      invisible: true,
       noFooterWindow: true,
     },
     defaultSize: {
