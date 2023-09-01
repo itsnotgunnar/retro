@@ -1,6 +1,7 @@
 import ErrorBox from './ErrorBox';
 import Location from './Location';
 import Blog from './Blog';
+import Quotes from './Quotes';
 // import winamplify from './winampify';
 import Winamp from './Winamp';
 import error from 'assets/windowsIcons/897(16x16).png';
@@ -14,6 +15,7 @@ import computer from 'assets/windowsIcons/676(32x32).png';
 import Resume from './Resume';
 import ie from 'assets/windowsIcons/ie.png';
 import resume from 'assets/windowsIcons/resume32.png';
+import quotes from 'assets/windowsIcons/quotes32.png';
 
 const gen = () => {
   let id = -1;
@@ -30,6 +32,26 @@ export const defaultAppState = [
     header: {
       title: 'Blog',
       icon: notepad,
+    },
+    defaultSize: {
+      width: window.innerWidth * 0.75,
+      height: window.innerHeight / 4,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.225,
+      y: window.innerHeight * 0.125,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: false,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+  {
+    component: Quotes,
+    header: {
+      title: 'Quotes',
+      icon: quotes,
     },
     defaultSize: {
       width: window.innerWidth * 0.75,
@@ -69,7 +91,7 @@ export const defaultAppState = [
   {
     component: Winamp,
     header: {
-      title: 'UNTDL2',
+      title: 'My Playlist',
       icon: music,
       noFooterWindow: true,
     },
@@ -160,6 +182,13 @@ export const defaultIconState = [
     component: Resume,
     isFocus: false,
   },
+  {
+    id: 1,
+    icon: quotes,
+    title: 'QTS',
+    component: Quotes,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -200,6 +229,25 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
+  Quotes: {
+    header: {
+      icon: quotes,
+      title: 'Quotes',
+    },
+    component: Quotes,
+    defaultSize: {
+      width: window.innerWidth * 0.75,
+      height: window.innerHeight / 4,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.225,
+      y: window.innerHeight * 0.125,
+    },
+    resizable: true,
+    minimized: true,
     maximized: false,
     multiInstance: true,
   },
@@ -301,4 +349,4 @@ export const appSettings = {
   },
 };
 
-export { ErrorBox, Location, Blog, Winamp, MyComputer, Resume };
+export { ErrorBox, Location, Blog, Winamp, MyComputer, Resume, Quotes };

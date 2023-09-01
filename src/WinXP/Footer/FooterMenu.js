@@ -29,6 +29,7 @@ import notepad from 'assets/windowsIcons/327(32x32).png';
 import empty from 'assets/empty.png';
 import mystery from 'assets/windowsIcons/mystery.png';
 import mail from 'assets/windowsIcons/mail.png';
+import quotes from 'assets/windowsIcons/quotes32.png';
 
 import { AllPrograms, ConnectTo, MyRecentDocuments } from './FooterMenuData';
 
@@ -62,7 +63,7 @@ function FooterMenu({ className, onClick }) {
               { icon: resume, text: 'Resume' },
               { icon: search, text: 'Where am I?' },
               { icon: paint, text: 'Projects' },
-              { icon: mediaPlayer, text: 'Quotes' },
+              { icon: quotes, text: 'Quotes' },
               { icon: mail, text: 'Feedback' },
             ]}
           />
