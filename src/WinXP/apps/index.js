@@ -165,7 +165,7 @@ export const defaultIconState = [
   {
     id: 3,
     icon: notepadLarge,
-    title: 'Thoughts',
+    title: 'Food for Thought',
     component: Blog,
     isFocus: false,
   },

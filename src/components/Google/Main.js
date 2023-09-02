@@ -22,7 +22,7 @@ function Main({ onSearch, className }) {
             className="logo"
             alt="Resume"
             src={resume}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: '60%', height: '60%' }}
           />
         </section>
       </body>

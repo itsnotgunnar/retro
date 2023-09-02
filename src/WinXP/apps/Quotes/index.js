@@ -186,13 +186,13 @@ Learn what makes someone feel important, and you learn who they are.
 
 Being a counter-indicator is an odd position.. no matter what you do you’re wrong. Switch? That’s the wrong decision. 
 
-The gap between deontology and utilitarianism is illusory
+The gap between deontology and utilitarianism is illusory.
 
-Activities tend to fill the time they are allotted (Parkinson’s Law)
+Activities tend to fill the time they are allotted (Parkinson’s Law).
 
 Resentment is like drinking poison and waiting for the other person to die 
 
-Every man has a right to property [in his own person]
+Every man has a right to property [in his own person].
 
 Being present isn't ignoring the past or future.. the past and future are only exhibited in the present.
 
@@ -206,7 +206,7 @@ Out of these, only one can be True, or else they are the same.
 
 There can only be one truth.
 
-Be ware of the 37% Rule
+Be ware of the 37% Rule.
 
 Isolation Paradox- the more time you develop yourself-intellectually, emotionally, spiritually, physically- the more you narrow the selection of suitable long-term partners
 
