@@ -4,6 +4,7 @@ import Blog from './Blog';
 import Quotes from './Quotes';
 // import winamplify from './winampify';
 import Winamp from './Winamp';
+import Domains from './Domains';
 import error from 'assets/windowsIcons/897(16x16).png';
 import notepad from 'assets/windowsIcons/327(16x16).png';
 import notepadLarge from 'assets/windowsIcons/327(32x32).png';
@@ -17,6 +18,7 @@ import ie from 'assets/windowsIcons/ie.png';
 import resume from 'assets/windowsIcons/resume32.png';
 import quotes from 'assets/windowsIcons/quotes32.png';
 import mystery from 'assets/windowsIcons/mystery.png';
+import domains from 'assets/windowsIcons/internet-folder-32x32.png';
 
 const gen = () => {
   let id = -1;
@@ -31,7 +33,7 @@ export const defaultAppState = [
   {
     component: Blog,
     header: {
-      title: 'Blog',
+      title: 'Food for Thought',
       icon: notepad,
     },
     defaultSize: {
@@ -43,7 +45,7 @@ export const defaultAppState = [
       y: window.innerHeight * 0.125,
     },
     resizable: true,
-    minimized: false,
+    minimized: true,
     maximized: false,
     id: genId(),
     zIndex: genIndex(),
@@ -52,6 +54,27 @@ export const defaultAppState = [
     component: Quotes,
     header: {
       title: 'Quotes',
+      icon: quotes,
+      noFooterWindow: true,
+    },
+    defaultSize: {
+      width: window.innerWidth * 0.75,
+      height: window.innerHeight / 4,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.225,
+      y: window.innerHeight * 0.125,
+    },
+    resizable: true,
+    minimized: true,
+    maximized: false,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+  {
+    component: Domains,
+    header: {
+      title: 'Domains for Sale',
       icon: quotes,
       noFooterWindow: true,
     },
@@ -163,6 +186,13 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
+    id: 5,
+    icon: domains,
+    title: 'Domains for Sale',
+    component: Domains,
+    isFocus: false,
+  },
+  {
     id: 3,
     icon: notepadLarge,
     title: 'Food for Thought',
@@ -170,10 +200,10 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 5,
-    icon: location,
-    title: 'Where am I?',
-    component: Location,
+    id: 1,
+    icon: quotes,
+    title: 'Cool Quotes',
+    component: Quotes,
     isFocus: false,
   },
   {
@@ -184,10 +214,10 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 1,
-    icon: quotes,
-    title: 'Cool Quotes',
-    component: Quotes,
+    id: 5,
+    icon: location,
+    title: 'Where am I?',
+    component: Location,
     isFocus: false,
   },
 ];
@@ -217,7 +247,7 @@ export const appSettings = {
   Blog: {
     header: {
       icon: notepad,
-      title: 'Blog',
+      title: 'Food for Thought',
     },
     component: Blog,
     defaultSize: {
@@ -239,6 +269,25 @@ export const appSettings = {
       title: 'Quotes',
     },
     component: Quotes,
+    defaultSize: {
+      width: window.innerWidth * 0.75,
+      height: window.innerHeight / 4,
+    },
+    defaultOffset: {
+      x: window.innerWidth * 0.225,
+      y: window.innerHeight * 0.125,
+    },
+    resizable: true,
+    minimized: true,
+    maximized: false,
+    multiInstance: false,
+  },
+  Domains: {
+    header: {
+      icon: quotes,
+      title: 'Domains',
+    },
+    component: Domains,
     defaultSize: {
       width: window.innerWidth * 0.75,
       height: window.innerHeight / 4,

@@ -4,10 +4,63 @@ import styled from 'styled-components';
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
+// Create a variable that will hold a few pages of cool quotes that will be passed as the useState default value
+const quotes = [
+  `+1 (713) 409-0920
+
+usenergy.ai
+
+bmwgroup.ai
+
+urbantech.ai
+
+iotsecurity.ai
+
+bioprinting.ai
+
+gametech.ai
+  
+freebeats.ai
+
+economical.ai
+  
+enhancedreality.ai
+  
+carbonclean.ai
+  
+autogenerative.ai
+
+holographics.ai
+
+appliedquantum.ai
+
+sellads.ai
+
+exoskeletons.ai
+
+vlogging.ai
+
+clang.ai
+
+aihacks.ai
+
+selfesteem.ai
+
+findapartments.ai
+
+findhouses.ai
+
+anti-aging.ai
+
+bio-hacking.ai
+
+paleontology.ai
+
+freeprescriptions.ai`,
+];
+
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState(
-    "What's profound is that you make an amount of decisions to choose the same path every day, an amount that dwarfs any change, yet a single rash and adventurous decision to change your environment unlocks a path that holds entirely new experiences.",
-  );
+  const [docText, setDocText] = useState(quotes);
   const [wordWrap, setWordWrap] = useState(true);
 
   function onClickOptionItem(item) {
