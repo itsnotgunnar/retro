@@ -19,7 +19,7 @@ iotsecurity.ai
 bioprinting.ai
 
 gametech.ai
-  
+
 freebeats.ai
 
 economical.ai

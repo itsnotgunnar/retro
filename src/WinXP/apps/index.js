@@ -399,4 +399,13 @@ export const appSettings = {
   },
 };
 
-export { ErrorBox, Location, Blog, Winamp, MyComputer, Resume, Quotes };
+export {
+  ErrorBox,
+  Location,
+  Blog,
+  Winamp,
+  MyComputer,
+  Resume,
+  Quotes,
+  Domains,
+};
