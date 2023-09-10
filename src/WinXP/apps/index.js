@@ -214,7 +214,7 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 5,
+    id: 0,
     icon: location,
     title: 'Where am I?',
     component: Location,
