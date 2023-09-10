@@ -280,7 +280,7 @@ export const appSettings = {
     resizable: true,
     minimized: true,
     maximized: false,
-    multiInstance: false,
+    multiInstance: true,
   },
   Domains: {
     header: {
@@ -355,7 +355,7 @@ export const appSettings = {
       y: window.innerHeight * 0.25,
     },
     resizable: true,
-    minimized: true,
+    minimized: false,
     maximized: false,
     multiInstance: true,
   },
