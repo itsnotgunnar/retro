@@ -11,13 +11,10 @@ import notepadLarge from 'assets/windowsIcons/327(32x32).png';
 import music from 'assets/windowsIcons/music16.png';
 import location from 'assets/windowsIcons/299(32x32).png';
 import MyComputer from './MyComputer';
-import files from 'assets/windowsIcons/318(32x32).png';
 import computer from 'assets/windowsIcons/676(32x32).png';
 import Resume from './Resume';
-import ie from 'assets/windowsIcons/ie.png';
 import resume from 'assets/windowsIcons/resume32.png';
 import quotes from 'assets/windowsIcons/quotes32.png';
-import mystery from 'assets/windowsIcons/mystery.png';
 import domains from 'assets/windowsIcons/internet-folder-32x32.png';
 
 const gen = () => {
