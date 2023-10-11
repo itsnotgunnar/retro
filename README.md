@@ -1,4 +1,4 @@
-# retro - a node.js website for gunnar.ai
+# gunnar.ai - a React.js personal website
 
 'retro' is a node.js website designed for gunnar.ai. it is a dynamic and responsive web application that provides a platform for users to interact with the gunnar.ai domain. the website is built using modern web technologies and offers a range of features to enhance user experience.
 
