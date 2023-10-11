@@ -1,4 +1,4 @@
-`# Gunnar.ai - A Personal React.js Website
+# Gunnar.ai - A Personal React.js Website
 
 'retro' is a Node.js website designed for Gunnar.ai. It is a dynamic and responsive web application that provides a platform for users to interact with the Gunnar.ai domain. The website is built using modern web technologies and offers a range of features to enhance user experience.
 
