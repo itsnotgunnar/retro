@@ -1,35 +1,35 @@
-# gunnar.ai - a React.js personal website
+`# Gunnar.ai - A Personal React.js Website
 
-'retro' is a node.js website designed for gunnar.ai. it is a dynamic and responsive web application that provides a platform for users to interact with the gunnar.ai domain. the website is built using modern web technologies and offers a range of features to enhance user experience.
+'Retro' is a Node.js website designed for Gunnar.ai. It is a dynamic and responsive web application that provides a platform for users to interact with the Gunnar.ai domain. The website is built using modern web technologies and offers a range of features to enhance user experience.
 
 ![image](website-example-mvp.png)
 
-## table of contents
+## Table of Contents
 
-- [installation](#installation)
-- [usage](#usage)
-- [features](#features)
-- [contributing](#contributing)
-- [license](#license)
-- [authors](#authors)
-- [acknowledgments](#acknowledgments)
-- [contact](#contact)
-- [additional sections](#additional-sections)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
+- [Additional Sections](#additional-sections)
 
-## installation
+## Installation
 
-before you begin the installation process, make sure you have node.js and npm installed on your machine.
+Before you begin the installation process, make sure you have Node.js and npm installed on your machine.
 
-1. clone the repository:
+1. Clone the repository:
 git clone https://github.com/itsnotgunnar/retro.git
-2. navigate to the project directory:
+2. Navigate to the project directory:
 cd retro/winXP
-3. install the required dependencies:
+3. Install the required dependencies:
 npm install
-4. start the server:
+4. Start the server:
 npm start
 
-the application will start running on `http://localhost:3000`.
+The application will start running on `http://localhost:3000`.`
 
 ## Features
 - Old-school Windows XP interface
