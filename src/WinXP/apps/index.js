@@ -356,25 +356,6 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
-  MyComputer: {
-    header: {
-      icon: computer,
-      title: 'My Computer',
-    },
-    component: MyComputer,
-    defaultSize: {
-      width: window.innerWidth / 3,
-      height: window.innerHeight / 3,
-    },
-    defaultOffset: {
-      x: window.innerWidth / 3,
-      y: window.innerHeight / 43,
-    },
-    resizable: true,
-    minimized: false,
-    maximized: false,
-    multiInstance: true,
-  },
   InternetExplorer: {
     header: {
       icon: resume,
