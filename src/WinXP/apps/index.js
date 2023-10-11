@@ -372,7 +372,7 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    maximized: false,
+    maximized: true,
     multiInstance: true,
   },
 };
