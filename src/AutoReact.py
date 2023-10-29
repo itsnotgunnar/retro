@@ -1,142 +1,88 @@
 import autogen
+import time
+from queue import Queue
 
-# Configuration for AI agents
-llm_config={
+# Initialize task queue
+task_queue = Queue()
+
+# Configuration for all agents
+llm_config = {
     "request_timeout": 600,
     "seed": 42,
-    "config_list": [{"model": "gpt-4", "api_key": "API_KEY"}],
+    "config_list": [
+        {
+            'model': 'gpt-4',
+            'api_key': 'API_KEY'
+        }
+    ],
     "temperature": 0
 }
 
-# Define agents for each role
+# Initialize agents for each role with a system message
+def initialize_agent(name, role_description):
+    return autogen.AssistantAgent(
+        name=name,
+        llm_config=llm_config,
+        system_message=role_description
+    )
 
-project_manager = autogen.AssistantAgent(
-    name="ProjectManager",
-    llm_config=llm_config,
-    system_message="Manages project scope, timeline, and resource allocation."
-)
+# Agents initialization
+agents = {
+    'project_manager': initialize_agent("ProjectManager", "Handles planning and initial setup. Uses Agile methodology."),
+    'react_component_dev': initialize_agent("ReactComponentDeveloper", "Develops React components. Uses Atomic design."),
+    'styling_dev': initialize_agent("StylingDev", "Handles styling and themes. Uses CSS/Sass."),
+    'db_architect': initialize_agent("DatabaseArchitect", "Designs the database. Uses SQL/NoSQL."),
+    'api_dev': initialize_agent("ApiDeveloper", "Develops API. Uses Node.js, Express.js."),
+    'state_management': initialize_agent("StateManagementSpecialist", "Handles state management. Uses Redux/MobX."),
+    'react_router': initialize_agent("ReactRouterManager", "Manages React Routing. Uses React Router."),
+    'auth_specialist': initialize_agent("AuthSpecialist", "Handles authentication and authorization. Uses OAuth, JWT."),
+    'frontend_tester': initialize_agent("FrontEndTester", "Conducts frontend tests. Uses Jest."),
+    'backend_tester': initialize_agent("BackEndTester", "Conducts backend tests. Uses Mocha, Chai."),
+    'e2e_tester': initialize_agent("EndToEndTester", "Conducts end-to-end tests. Uses Cypress, Selenium."),
+}
 
-react_component_dev = autogen.AssistantAgent(
-    name="ReactComponentDeveloper",
-    llm_config=llm_config,
-    system_message="Develops reusable React components."
-)
+# Define role interactions and task dependencies
+role_interactions = {
+    'project_manager': {'next_role': 'react_component_dev', 'task_message': 'Define project scope, timeline, and allocate resources.'},
+    'react_component_dev': {'next_role': 'styling_dev', 'task_message': 'Develop reusable React components.'},
+    'styling_dev': {'next_role': 'db_architect', 'task_message': 'Design styling and themes.'},
+    'db_architect': {'next_role': 'api_dev', 'task_message': 'Design the database schema.'},
+    'api_dev': {'next_role': 'state_management', 'task_message': 'Develop API endpoints.'},
+    'state_management': {'next_role': 'react_router', 'task_message': 'Set up state management.'},
+    'react_router': {'next_role': 'auth_specialist', 'task_message': 'Implement React routing.'},
+    'auth_specialist': {'next_role': 'frontend_tester', 'task_message': 'Implement authentication and authorization.'},
+    'frontend_tester': {'next_role': 'backend_tester', 'task_message': 'Conduct front-end tests.'},
+    'backend_tester': {'next_role': 'e2e_tester', 'task_message': 'Conduct back-end tests.'},
+    'e2e_tester': {'next_role': None, 'task_message': 'Conduct end-to-end tests.'},
+}
 
-styling_dev = autogen.AssistantAgent(
-    name="StylingDev",
-    llm_config=llm_config,
-    system_message="Applies styles to React components."
-)
+# Task execution logic
+def execute_task(current_role):
+    next_role_info = role_interactions.get(current_role)
+    if not next_role_info:
+        print(f"Role {current_role} has no further interactions.")
+        return
+    
+    next_role = next_role_info['next_role']
+    task_message = next_role_info['task_message']
+    
+    print(f"{current_role} is executing task: {task_message}")
+    
+    # Simulating task execution by the agent
+    agent = agents[current_role]
+    response = agent.query(task_message)
+    
+    print(f"{current_role} completed task with response: {response}")
+    
+    # Adding next role to queue
+    if next_role:
+        task_queue.put(next_role)
 
-database_architect = autogen.AssistantAgent(
-    name="DatabaseArchitect",
-    llm_config=llm_config,
-    system_message="Designs and structures the database schema."
-)
+# Seed the task queue with the starting role
+task_queue.put('project_manager')
 
-api_dev = autogen.AssistantAgent(
-    name="APIDeveloper",
-    llm_config=llm_config,
-    system_message="Develops API endpoints."
-)
-
-state_management = autogen.AssistantAgent(
-    name="StateManagement",
-    llm_config=llm_config,
-    system_message="Handles state management setup."
-)
-
-router_manager = autogen.AssistantAgent(
-    name="RouterManager",
-    llm_config=llm_config,
-    system_message="Manages routing logic."
-)
-
-auth_specialist = autogen.AssistantAgent(
-    name="AuthSpecialist",
-    llm_config=llm_config,
-    system_message="Handles authentication and authorization."
-)
-
-frontend_tester = autogen.AssistantAgent(
-    name="FrontendTester",
-    llm_config=llm_config,
-    system_message="Performs front-end unit testing."
-)
-
-backend_tester = autogen.AssistantAgent(
-    name="BackendTester",
-    llm_config=llm_config,
-    system_message="Performs back-end unit testing."
-)
-
-e2e_tester = autogen.AssistantAgent(
-    name="E2ETester",
-    llm_config=llm_config,
-    system_message="Conducts end-to-end testing."
-)
-
-# User Proxy Agent
-user_proxy = autogen.UserProxyAgent(
-    name="user_proxy",
-    human_input_mode="NEVER",
-    max_consecutive_auto_reply=10,
-    is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
-    code_execution_config={"work_dir": "web"},
-    llm_config=llm_config,
-    system_message="""Reply TERMINATE if the task has been solved at full satisfaction.
-    Otherwise, reply CONTINUE, or the reason why the task is not solved yet."""
-)
-
-# Define tasks for each role
-
-task_list = [
-    {
-        "agent": project_manager,
-        "message": "Define project scope, timeline, and resource allocation."
-    },
-    {
-        "agent": react_component_dev,
-        "message": "Develop reusable React components."
-    },
-    {
-        "agent": styling_dev,
-        "message": "Style the React components."
-    },
-    {
-        "agent": database_architect,
-        "message": "Design the database schema."
-    },
-    {
-        "agent": api_dev,
-        "message": "Develop the API endpoints."
-    },
-    {
-        "agent": state_management,
-        "message": "Set up state management."
-    },
-    {
-        "agent": router_manager,
-        "message": "Implement routing logic."
-    },
-    {
-        "agent": auth_specialist,
-        "message": "Implement authentication and authorization."
-    },
-    {
-        "agent": frontend_tester,
-        "message": "Perform front-end unit tests."
-    },
-    {
-        "agent": backend_tester,
-        "message": "Perform back-end unit tests."
-    },
-    {
-        "agent": e2e_tester,
-        "message": "Perform end-to-end tests."
-    }
-]
-
-# Initiate tasks sequentially
-for task in task_list:
-    user_proxy.initiate_chat(task["agent"], message=task["message"])
+# Main loop to process tasks
+while not task_queue.empty():
+    current_role = task_queue.get()
+    execute_task(current_role)
+    time.sleep(1)  # Simulating a delay between tasks
