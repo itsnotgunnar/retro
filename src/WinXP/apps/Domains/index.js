@@ -6,9 +6,7 @@ import dropDownData from './dropDownData';
 
 // Create a variable that will hold a few pages of cool quotes that will be passed as the useState default value
 const quotes = [
-  `+1 (713) 409-0920
-
-usenergy.ai
+  `usenergy.ai
 
 bmwgroup.ai
 
