@@ -5,7 +5,7 @@ import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState('Reach out if you're in Arizona!');
+  const [docText, setDocText] = useState('Reach out if you\'re in Arizona!');
   const [wordWrap, setWordWrap] = useState(true);
 
   function onClickOptionItem(item) {
