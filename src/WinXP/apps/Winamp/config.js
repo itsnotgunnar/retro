@@ -3,7 +3,7 @@ const album = 'UNTDL2';
 export const initialTracks = [
   {
     url:
-      'https://raw.githubusercontent.com/itsnotgnnar/itsnotgunnar/retro/blob/42d63b88338d95b8e5c66bb1335d8edfe6dab81b/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Touch%20Me.mp3',
+      'https://raw.githubusercontent.com/itsnotgnnar/itsnotgunnar/retro/master/src/assets/music/%5BSPOTIFY-DOWNLOADER.COM%5D%20Touch%20Me.mp3',
     duration: 325,
     metaData: {
       title: 'Touch Me',
