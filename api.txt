@@ -1,0 +1,3 @@
+resume -> put retro/src/assets/personal/resume.png
+background photo -> imgur link at bottom of /home/akrasia/repos/retro/src/WinXP/index.js
+blog post -> /home/akrasia/repos/retro/src/WinXP/apps/Blog/index.js

@@ -6,7 +6,7 @@ import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
   const [docText, setDocText] = useState(
-    "What's profound is that you make thousands of decisions to choose the same path every day, an amount that dwarfs that of any change, yet a single rash and adventurous decision to change your environment unlocks a path that holds entirely new experiences.",
+    "What's profound is that every day, you make thousands of decisions to take the same path.. to do the same thing, yet a single rash and adventurous decision will change life as you know it.",
   );
   const [wordWrap, setWordWrap] = useState(true);
 

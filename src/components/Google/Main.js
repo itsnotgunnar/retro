@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import resume from './Resume-Main.png';
+import resume from '../../assets/personal/resume.png';
 
 function Main({ onSearch, className }) {
   const [value, setValue] = useState('');

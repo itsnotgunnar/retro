@@ -355,7 +355,7 @@ const Container = styled.div`
   height: 100%;
   overflow: hidden;
   position: relative;
-  background: url(https://i.imgur.com/f9Bbg72.png) no-repeat center fixed;
+  background: url(https://i.imgur.com/smBYDRH.png) no-repeat center;
   background-size: cover;
   animation: ${({ state }) => animation[state]} 5s forwards;
   *:not(input):not(textarea) {
